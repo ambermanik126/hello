@@ -1,0 +1,29 @@
+{% extends 'std_page/index.html' %}
+
+{% load attachable_blocks %}
+{% load pipeline_plus %}
+{% load text %}
+{% load away %}
+{% load staticfiles %}
+
+{% block static_head %}
+  {{ block.super }}
+  {% stylesheet 'about' %}
+{% endblock static_head %}
+
+{% block static_js %}
+  {{ block.super }}
+  {% javascript 'about' %}
+{% endblock static_js %}
+
+
+{% block page_uniq %}
+
+  <div class="grid">
+    <div class="gc-wide-8 gc-8 gc-tablet-full gc-mobile-full gc-center block">
+      <div class="text-styles">{% away config.text %}</div>
+      {% include 'share_container.html' %}
+    </div>
+  </div>
+
+{% endblock page_uniq %}

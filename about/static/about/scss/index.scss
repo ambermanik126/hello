@@ -1,0 +1,11 @@
+@import "mixins";
+
+.roofing-block {
+  padding: 25px 0 60px;
+}
+
+.gallery-block {
+  @include media_interval(0, $media768) {
+    padding: 0 0 100px;
+  }
+}

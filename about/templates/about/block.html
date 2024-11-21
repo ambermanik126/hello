@@ -1,0 +1,13 @@
+{% load i18n %}
+
+<div class="about-block block">
+  <div class="grid-block">
+    {% if block.header %}
+      <div class="title-h1">{{ block.header }}</div>
+    {% endif %}
+
+    <div>{{ block.description }}</div>
+
+    <div><a href="{% url 'about:index' %}">{{ block.link_text }}</a></div>
+  </div>
+</div>
