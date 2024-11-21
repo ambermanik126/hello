@@ -1,0 +1,4 @@
+User-agent: *
+Host: elementext.com
+Sitemap: https://elementext.com/sitemap.xml
+Disallow: /*/ajax/
